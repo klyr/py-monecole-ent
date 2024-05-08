@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "py-monecole-ent"
+version = "0.1.0"
+description = "Asynchronous client library for MonEcole ENT (by https://edifice.io/)"
+authors = ["Julien Barbot <julien.barbot@gmail.com>"]
+readme = "README.md"
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.9.5"
+
+
+[tool.poetry.scripts]
+monecole = "py_monecole_ent.__main__:__main__"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
