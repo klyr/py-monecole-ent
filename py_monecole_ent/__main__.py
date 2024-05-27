@@ -29,7 +29,7 @@ def cli(args):
     subparsers_homeworks = parser_homeworks.add_subparsers(
         required=False, dest="homeworks_command_name"
     )
-    parser_homeworks_list = subparsers_homeworks.add_parser("list")
+    subparsers_homeworks.add_parser("list")
     parser_homeworks_get = subparsers_homeworks.add_parser("get")
     parser_homeworks_get.add_argument("homeworks_ids", nargs=1)
     parser_homeworks_get.add_argument("--today", action="store_true")
